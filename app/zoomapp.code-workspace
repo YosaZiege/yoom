@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "zoomapp",
+			"path": ".."
+		},
+		{
+			"name": "public",
+			"path": "../../../../../Downloads/public"
+		}
+	],
+	"settings": {}
+}
