@@ -7,7 +7,7 @@ import { StreamCall, StreamTheme } from '@stream-io/video-react-sdk';
 import { Loader } from 'lucide-react';
 import React, { useState } from 'react'
 
-const Page; = ({ params: {id} }: { params: { id: string } }) => {
+const Page = ({ params: {id} }: { params: { id: string } }) => {
   const {user, isLoaded} = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState(false);
   const { call ,  isCallLoading } = useGetCallById(id);
