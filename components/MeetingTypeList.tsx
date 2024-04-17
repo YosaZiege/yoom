@@ -136,7 +136,7 @@ const MeetingTypeList = () => {
             title="Meeting Created"
             className="text-center"
             handleClick={() => {
-                 navigator.clipboard.writeText(meetingLink);
+                 navigator.clipboard.writeText(callDetails?.id);
                  toast({title: 'Link copied'})
             }}
             image="/icons/checked.svg"
@@ -158,7 +158,7 @@ const MeetingTypeList = () => {
             title="Type the link here"
             className="text-center"
             buttonText="Join Meeting"
-            handleClick={() => router.push(values.link)}
+            handleClick={() => router.push(`/meeting/${values.link}`)}
         >
             <Input
             placeholder="Meeting Link"

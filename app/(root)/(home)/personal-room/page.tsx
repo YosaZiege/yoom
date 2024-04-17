@@ -19,7 +19,7 @@ const PersonalRoom = () => {
   const { call } = useGetCallById(meetingId!);
   const client = useStreamVideoClient();
   const router = useRouter();
-  const meetingLink = `/meeting/${meetingId}?personal=true`
+  const meetingLink = `${meetingId}`
   const startRoom = async () => {
 
     if(!client || !user) return;
@@ -63,3 +63,4 @@ const PersonalRoom = () => {
 }
 
 export default PersonalRoom
+
